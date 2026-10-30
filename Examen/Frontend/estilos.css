@@ -1,0 +1,94 @@
+/* Archivo: estilos.css */
+/* Aqui se decide como se ve la pagina (colores, tamanos, espacios) */
+
+/* estilo de toda la pagina */
+body {
+  font-family: Arial, sans-serif;   /* tipo de letra */
+  max-width: 500px;                 /* ancho maximo para que se vea bien en PC */
+  margin: 20px auto;                /* centra la pagina */
+  padding: 0 15px;                  /* espacio a los lados para celular */
+  background-color: #f2f4f7;        /* fondo gris claro */
+  color: #222;                      /* color del texto */
+}
+
+/* titulo centrado */
+h1 {
+  text-align: center;
+}
+
+/* caja blanca del formulario */
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;               /* esquinas redondeadas */
+  border: 1px solid #ccc;
+}
+
+/* textos de cada campo (Nombre, Descripcion, Estado) */
+label {
+  display: block;                   /* cada uno en su propia linea */
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+/* campos de texto, descripcion y lista de estado */
+input,
+textarea,
+select {
+  width: 100%;                      /* ocupan todo el ancho de la caja */
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;           /* el padding no agranda el campo */
+}
+
+/* boton de guardar */
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #2563eb;        /* azul */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;                  /* manita al pasar el mouse */
+}
+
+/* boton cuando el mouse esta encima */
+button:hover {
+  background-color: #1d4ed8;        /* azul mas oscuro */
+}
+
+/* mensaje de Actividad guardada */
+#mensaje {
+  text-align: center;
+  color: green;
+}
+
+/* lista de actividades sin puntitos */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* cada actividad se ve como una tarjeta blanca */
+li {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 8px;
+}
+
+/* descripcion dentro de cada tarjeta */
+li p {
+  margin: 4px 0 8px 0;
+}
+
+/* selector de estado dentro de cada tarjeta (mas chico) */
+li select {
+  width: auto;
+}

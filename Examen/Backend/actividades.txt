@@ -1,0 +1,3 @@
+1|Desarrollo de diagramas|desarrollar los diagramas del proyecto|En proceso
+2|Realizacion de examen|haremos el examen|Terminada
+3|Limpiar salones|Realizar la limpieza de los salones|Terminada

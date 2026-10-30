@@ -1,0 +1,11 @@
+{
+  "name": "gestor-actividades",
+  "version": "1.0.0",
+  "main": "Backend/app.js",
+  "scripts": {
+    "start": "node Backend/app.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

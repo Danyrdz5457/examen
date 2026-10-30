@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- para que se puedan usar acentos y la enie -->
+  <meta charset="UTF-8">
+  <!-- para que la pagina se vea bien en celular -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- titulo que sale en la pestana del navegador -->
+  <title>Gestor de actividades</title>
+  <!-- conectamos el archivo de estilos -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- titulo principal -->
+  <h1>Gestor de actividades</h1>
+
+  <!-- formulario para registrar una actividad nueva -->
+  <form id="formulario">
+
+    <!-- nombre de la actividad (obligatorio) -->
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" placeholder="Ej: Limpiar bodega" required>
+
+    <!-- descripcion de la actividad (obligatoria) -->
+    <label for="descripcion">Descripcion</label>
+    <textarea id="descripcion" rows="3" placeholder="Escribe los detalles" required></textarea>
+
+    <!-- lista para elegir el estado -->
+    <label for="estado">Estado</label>
+    <select id="estado">
+      <option value="Pendiente">Pendiente</option>
+      <option value="En proceso">En proceso</option>
+      <option value="Terminada">Terminada</option>
+    </select>
+
+    <!-- boton para guardar -->
+    <button type="submit">Guardar actividad</button>
+  </form>
+
+  <!-- aqui JavaScript escribe mensajes como Actividad guardada -->
+  <p id="mensaje"></p>
+
+  <!-- aqui JavaScript dibuja las actividades guardadas -->
+  <h2>Lista de actividades</h2>
+  <ul id="lista"></ul>
+
+  <!-- conectamos el archivo de JavaScript (va al final) -->
+  <script src="script.js"></script>
+</body>
+</html>
